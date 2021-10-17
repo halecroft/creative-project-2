@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset='UTF-8'/>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
+        <title>ISS Pass Tracker</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel='stylesheet' href='css/styles.css'/>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://cp2.halecroft.net">ISS Pass Tracker</a>
+            </div>
+        </nav>
+
+
+        <div class="everythingContainer">
+            <div class="title">
+                <h3>See the next times the ISS will pass over you</h3>
+            </div>
+
+            <div class="inputContainer">
+                <form>
+                    <div class="form-group">
+                        <label for="location">Location (Zip Code or City)</label>
+                        <input type="text" class="form-control" id="location" placeholder="Zip Code or City">
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label for="numPasses">Number of Passes</label>
+                            <input type="number" class="form-control" id="numPasses" value="5">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="showPasses">Show</label>
+                            <select class="form-control" id="showPasses">
+                                <option>All Passes</option>
+                                <option>Visible Passes Only</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <button type="button" class="btn btn-outline-success" id="submit">Submit</button>
+
+            <h3 class="error" id="errorMessage" hidden>Please enter a valid location.</h3>
+
+            <div class="results" id="results">
+                <!--<div class="passBox">
+                    <h3>2021-10-17 13:31:11 UTC</h3>
+                    <h4>Culmination</h4>
+                    <p>Altitude: 11.15&deg;</p>
+                    <p>Direction: 128.35&deg; (SE)</p>
+                    <p>Visible</p>
+                </div>-->
+            </div>
+        </div>
+
+
+        <footer class="bg-dark footer-link">
+            <a href="https://github.com/halecroft/creative-project-2">Github Repository</a>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script> <!--Bootstrap Scripts-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

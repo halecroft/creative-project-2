@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/background.png");
+    background-color: rgb(24, 26, 29);
+    position: absolute;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+
+footer {
+    text-align: center;
+    background-color: rgb(24, 26, 29);
+    padding: 0.75rem;
+    margin-top: 2rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    color:white;
+    font-size: 1.25rem;
+    text-decoration: none;
+}
+
+footer a:visited {
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: white;
+}
+
+p {
+    line-height: 1.5rem;
+    margin-bottom: 0;
+}
+
+label {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.title {
+    padding: 1rem;
+}
+
+.inputContainer {
+    margin-bottom: 1rem;
+}
+
+.everythingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5rem;
+    position: relative;
+}
+
+.error {
+    margin-top: 1rem;
+    justify-self: center;
+    color: rgb(255, 58, 58);
+}
+
+.results {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.passBox {
+    border: white 1px solid;
+    border-radius: 5px;
+    padding: 0.5rem 0.75rem;
+    width: 300px;
+}
+
+.navbar-dark .navbar-toggler {
+    color: rgba(255, 255, 255, 0.55);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar .container-fluid {
+    justify-content: center !important;
+}
+
+@media (max-width:767px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+
+    .inputContainer {
+        width: 95%;
+        align-items: center;
+    }
+
+    .results {
+        width: 95%;
+    }
+}
+
+@media (min-width:768px) {
+    .navbar-brand {
+        font-size: 2.5rem;
+    }
+
+    .inputContainer {
+        width: 75%;
+        align-items: center;
+    }
+
+    .results {
+        width: 75%;
+    }
+}
